@@ -1,0 +1,25 @@
+
+
+Até aqui, vimos que localStorage armazena dados do tipo texto string e, para armazenar objetos, arrays, e listas, é preciso convertê-los utilizando o método JSON.stringify(). Já quando queremos acessar algum dado, podemos utilizar o método localStorage.getItem().
+
+Os tipos de dados armazenados no localStorage não devem ser considerados sensíveis, de acordo com a LGPD (Lei Geral de Proteção de Dados). Isso ocorre, pois ele não possui nenhuma camada de proteção, e os dados podem ser acessados facilmente por terceiros. Dados considerados sensíveis, devem ser armazenados em Cookies.
+
+Você pode acessar os dados salvos no seu navegador na ferramenta Inspecionar, clicar em Aplicativo e depois em Armazenamento Local, na opção do menu lateral. Os dados estão salvos dentro do domínio do site que você acessou. localStorage é uma mão na roda para salvarmos conteúdos de interface, principalmente aqueles que não precisam ser salvos em um banco de dados, e podem ser públicos.
+
+
+
+Cookies, localStorage e sessionStorage são formas de armazenar dados no navegador, porém existem diferenças na usabilidade de cada um. Vamos conferir estas diferenças abaixo:
+
+localStorage guarda informações de forma persistente no navegador, sendo em média 5MB de armazenamento padrão, podendo variar dependendo do navegador utilizado. Este limite pode ser aumentado pelo usuário quando necessário, no entanto apenas alguns navegadores suportam isso. Os dados salvos são apenas do tipo string texto.
+
+Cookies guardam informações de forma persistente no navegador, sendo até 4KB de armazenamento por Cookie, bem menos que localStorage. Cada cookie é como se fosse um arquivo criado que guarda as informações de acesso da pessoa usuária, por exemplo, de qual local o site foi acessado, qual e-mail foi utilizado ao realizar login no navegador, e quais produtos de um site foram clicados. Para acessá-los, muitas empresas criam pop ups para confirmar a autorização do uso dessas informações, pois são consideradas sensíveis.
+
+sessionStorage é similar ao localStorage, sua diferença é que os dados não são salvos de forma persistente, ou seja, ao fechar o navegador eles são perdidos. Este tipo de armazenamento é utilizado quando queremos que a pessoa usuária utilize os dados apenas enquanto estiver com o site aberto.
+
+Nesta aula:
+
+    Aprendemos como utilizar o operador lógico “ou” || para retornar um tipo de dado desejado;
+    Aprendemos como alterar valores de tipo texto, para valores JavaScript com o método JSON.parse;
+    Aplicamos o método forEach() para manter os itens criados na página, mesmo após atualizá-la;
+    Aprendemos em quais casos é recomendado utilizar localStorage.
+
